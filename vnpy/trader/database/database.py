@@ -49,6 +49,7 @@ class BaseDatabaseManager(ABC):
     def save_bar_data(
         self,
         datas: Sequence["BarData"],
+        collection_name: str = None
     ):
         pass
 
@@ -56,6 +57,7 @@ class BaseDatabaseManager(ABC):
     def save_tick_data(
         self,
         datas: Sequence["TickData"],
+        collection_name: str = None
     ):
         pass
 
